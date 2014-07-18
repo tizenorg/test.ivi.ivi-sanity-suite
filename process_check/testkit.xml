@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ivi-sanity-suite">
+  <set name="process">
+    <testcase purpose="Check if ambd is started." type="functional_positive" status="ready" component="Core Service" execution_type="auto" priority="P0" id="chk_ambd">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>/usr/share/tests/ivi/ivi-sanity-suite/prs_checker ambd</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry>/usr/share/tests/ivi/ivi-sanity-suite/prs_checker ambd</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+      </categories>
+    </testcase>
+    <testcase purpose="Check if murphyd is started." type="functional_positive" status="ready" component="Core Service" execution_type="auto" priority="P0" id="chk_murphyd">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>/usr/share/tests/ivi/ivi-sanity-suite/prs_checker murphyd</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry>/usr/share/tests/ivi/ivi-sanity-suite/prs_checker murphyd</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+      </categories>
+    </testcase>
+  </set>
+</suite>

@@ -1,0 +1,43 @@
+#!/bin/sh
+# Copyright (C) 2010 Intel Corporation
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+#
+# Authors:
+#       Yu yucai  <yucai.yu@intel.com>
+# Date Created: 2011/03/24
+#
+# Modifications:
+#          Modificator  Date
+#          Content of Modification
+#
+
+echo "*** prs_checker ***"
+echo "You supplied $# parameters [ $@ ]"
+
+if [  $# -lt 1 ]; then
+        echo "Usage:    prs_checker process_name"
+        exit 2
+fi
+
+process=$1
+sleep 5
+pgrep "$1"
+if [ $? -ne 0 ]; then
+	echo "Not find process $process."
+	exit 1
+fi
+
+exit 0

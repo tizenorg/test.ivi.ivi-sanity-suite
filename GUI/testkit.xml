@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ivi-sanity-suite">
+  <set name="GUI">
+    <testcase purpose="Check if weston desktop is shown" type="functional_positive" status="ready" component="GUI" execution_type="auto" priority="P0" id="GUI_Home_Screen">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>GUI_Home_Screen</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry location="host">python ivi_tests.py -D $deviceid ivi_tests.testWestonDesktopIsShown</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+      </categories>
+    </testcase>
+    <testcase purpose="Check if Dialer could be launched from Wayland Terminal" type="functional_positive" status="ready" component="GUI" execution_type="auto" priority="P0" id="GUI_Dialer">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>GUI_Dialer</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry location="host">python ivi_tests.py -D $deviceid ivi_tests.testLaunchDialer</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+      </categories>
+    </testcase>
+    <testcase purpose="Check if web page is rendered by xwalk." type="functional_positive" status="ready" component="GUI" execution_type="auto" priority="P0" id="GUI_Xwalk">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>GUI_xwalk_web_page</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry location="host">python ivi_tests.py -D $deviceid ivi_tests.testLaunchXWalk_colorpg</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+      </categories>
+    </testcase> 
+  </set>
+</suite>

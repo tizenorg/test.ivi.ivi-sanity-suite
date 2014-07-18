@@ -1,0 +1,20 @@
+-----------------------
+ Introduction
+-----------------------
+This suite is to check acceptance of IVI image
+
+-----------------------
+ How to Run
+-----------------------
+(Suppose you only get the source code and testkit-lite has been setup on your test machine
+ if you have got ivi-sanity-suite RPM, you can directly go to step.1 on testing machine
+ if you don't have testkit-lite, you can get it from https://github.com/testkit/testkit-lite)
+
+Steps:
+
+1. testkit-lite -f /usr/share/tests/ivi/ivi-sanity-suite/testkit.xml --comm localhost -o ./results.xml
+
+
+-----------------------
+ TODO
+-----------------------

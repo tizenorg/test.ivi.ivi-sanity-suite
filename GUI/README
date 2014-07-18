@@ -1,0 +1,7 @@
+In server side(Ubuntu or Fedora Machine):
+1. Install fMBT(https://github.com/01org/fMBT).
+2. Install testkit-lite(https://github.com/testkit/testkit-lite). 
+3. Setup password-less ssh login from server to device.
+4. Install GUI test suite.
+5. Run by command: "TEST_DEVICE_IP=Your_device_IP_address /usr/share/tests/ivi/ivi-sanity-suite/GUI/runtest.sh"
+6. Find test result at ~/GUI.testkit.result.xml
