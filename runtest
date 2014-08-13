@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -e
+
+resdir=""
+
+if [[ ! -z $1 ]]; then
+    resdir=$1
+else
+    exit 1
+fi
+
+resfile=$resdir/testkit.result.xml
+
+timeout 10800 testkit-lite -f /usr/share/tests/ivi/ivi-sanity-suite/testkit.xml --comm localhost -o $resfile
+
+echo -e '\n## execution script: finished'
