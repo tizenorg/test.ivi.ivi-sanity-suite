@@ -12,6 +12,6 @@ fi
 
 resfile=$resdir/testkit.result.xml
 
-timeout 10800 testkit-lite -f /usr/share/tests/ivi/ivi-sanity-suite/testkit.xml --comm localhost -o $resfile
+timeout 10800 testkit-lite -f /usr/share/tests/ivi/ivi-sanity-suite/testkit.xml --comm tizenlocal -o $resfile
 
-echo -e '\n## execution script: finished'
+echo -e '\n## Execution script: finished'
